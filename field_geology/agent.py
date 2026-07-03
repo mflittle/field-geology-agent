@@ -60,9 +60,10 @@ Normalize the input into a structured observation set with these fields:
 For any field you cannot fill, use the string "none observed" rather than null.
 
 Only record what is actually visible or described. Do not invent observations.
-Do not upgrade a possibility into a fact. A photo can be misleading about scale,
-color balance, and weathering -- flag these limits honestly rather than
-over-reading the image.
+If you can infer a location from the image (e.g. a recognizable skyline), you
+may note it as an observation, but you must NOT treat it as coordinates for any
+lookup. Location for the map lookup comes only from explicitly provided
+coordinates, never from the image.
 """.strip(),
     description="Records structured field observations from a photo and/or text, with explicit uncertainty.",
     output_key="observations",
