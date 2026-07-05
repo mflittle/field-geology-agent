@@ -30,6 +30,7 @@ The result is a structured field report with the observation, the authoritative 
 ![Field geology pipeline as shown in the ADK trace view. Execution order runs left to right: DescriptionAgent (observe) → LocationAgent (map lookup via the Macrostrat MCP toolset) → DraftReportAgent (reconcile) → FinalizerAgent, which is gated on the request_geologist_confirmation human-review step.](docs/architecture-trace.png)
 
 *Figure: The four-agent pipeline. LocationAgent reaches the forked Macrostrat MCP server (McpToolset); FinalizerAgent cannot produce a final report without the human review gate (request_geologist_confirmation).*
+
 ---
 
 ## Architecture
@@ -91,7 +92,7 @@ The architecture is built around control patterns that will be familiar from reg
 The system has two repositories that work together:
 
 - **This repo** — the ADK agent pipeline (Python).
-- **The MCP server** — the forked Macrostrat MCP server (TypeScript/Node): https://github.com/mflittle/macrostrat-mcp.git.
+- The MCP server (TypeScript/Node): [github.com/mflittle/macrostrat-mcp](https://github.com/mflittle/macrostrat-mcp)
 
 ### Prerequisites
 
@@ -113,7 +114,7 @@ Note the absolute path to `build/index.js` — the pipeline needs it.
 ### 2. Configure the pipeline
 
 ```bash
-git clone https://github.com/mflittle/field-geology-agent/field_geology.git
+git clone https://github.com/mflittle/field_geology.git
 cd field-geology-agent
 python3 -m venv .venv
 source .venv/bin/activate
@@ -184,8 +185,6 @@ Stated plainly, because the limitations are contained by design rather than hidd
 - **This project** — MIT License.
 
 ---
-
-## Credits
 
 ## Credits
 
