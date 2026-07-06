@@ -188,4 +188,4 @@ Stated plainly, because the limitations are contained by design rather than hidd
 
 ## Credits
 
-Built by **[Michael Little](https://www.linkedin.com/in/michaelflittle/)** (architecture, agent pipeline, MCP extension) and **[Jacob Little](https://www.linkedin.com/in/jacob-little-3a0041266/)** (geology domain design, field documentation, demo film). Jacob is a 2026 William & Mary graduate (double major, Geology and Film).
+Built by **[Michael Little](https://www.linkedin.com/in/michaelflittle/)** (architecture, agent pipeline, MCP extension) and Jake Little (geology domain design, field documentation, demo film). 
